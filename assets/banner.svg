@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0d"/>
+      <stop offset="55%" stop-color="#161113"/>
+      <stop offset="100%" stop-color="#1f0a0c"/>
+    </linearGradient>
+    <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff2d2d" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff2d2d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="playGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4e45"/>
+      <stop offset="100%" stop-color="#c4001d"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2e"/>
+      <stop offset="100%" stop-color="#141416"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd86b"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bgGrad)"/>
+
+  <!-- soft grid for depth -->
+  <g stroke="#ffffff" stroke-opacity="0.035">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- glow behind play cluster -->
+  <ellipse cx="920" cy="180" rx="320" ry="240" fill="url(#glowRed)"/>
+
+  <!-- floating video cards (ad-free content) -->
+  <g opacity="0.9">
+    <rect x="760" y="60" width="150" height="90" rx="10" fill="url(#cardGrad)" stroke="#3a3a3f" stroke-width="1"/>
+    <polygon points="815,90 815,120 840,105" fill="#ffffff" opacity="0.85"/>
+
+    <rect x="930" y="40" width="150" height="90" rx="10" fill="url(#cardGrad)" stroke="#3a3a3f" stroke-width="1"/>
+    <polygon points="985,70 985,100 1010,85" fill="#ffffff" opacity="0.85"/>
+
+    <rect x="860" y="200" width="150" height="90" rx="10" fill="url(#cardGrad)" stroke="#3a3a3f" stroke-width="1"/>
+    <polygon points="915,230 915,260 940,245" fill="#ffffff" opacity="0.85"/>
+
+    <rect x="1020" y="180" width="120" height="72" rx="10" fill="url(#cardGrad)" stroke="#3a3a3f" stroke-width="1"/>
+    <polygon points="1064,203 1064,229 1086,216" fill="#ffffff" opacity="0.85"/>
+  </g>
+
+  <!-- large central play button, "premium" pulse ring -->
+  <circle cx="940" cy="150" r="70" fill="none" stroke="#ff4e45" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="940" cy="150" r="52" fill="url(#playGrad)"/>
+  <polygon points="922,124 922,176 964,150" fill="#ffffff"/>
+
+  <!-- ad-block badge -->
+  <g transform="translate(1075,250)">
+    <circle r="26" fill="#141416" stroke="#ffd86b" stroke-width="2"/>
+    <rect x="-13" y="-4" width="26" height="8" rx="2" fill="#ffd86b"/>
+    <line x1="-16" y1="-16" x2="16" y2="16" stroke="#ff4e45" stroke-width="3"/>
+  </g>
+
+  <!-- small sparkle accents for "premium" feel -->
+  <g fill="url(#goldGrad)">
+    <polygon points="150,60 156,74 170,80 156,86 150,100 144,86 130,80 144,74"/>
+    <polygon points="700,290 704,299 713,303 704,307 700,316 696,307 687,303 696,299"/>
+  </g>
+
+  <!-- headline + tagline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="80" font-weight="700"
+        fill="#ffffff" textLength="640" lengthAdjust="spacingAndGlyphs">
+    YouTube
+  </text>
+  <text x="60" y="235" font-family="'Segoe UI', Arial, sans-serif" font-size="80" font-weight="700"
+        fill="#ff4e45" textLength="480" lengthAdjust="spacingAndGlyphs">
+    Premium
+  </text>
+
+  <text x="60" y="280" font-family="'Segoe UI', Arial, sans-serif" fill="#d8d8da"
+        textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="19.1">
+    Ad-free videos, exclusive originals, and uninterrupted streaming — all in one subscription.
+  </text>
+</svg>
